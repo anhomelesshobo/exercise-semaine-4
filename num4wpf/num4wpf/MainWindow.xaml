@@ -1,0 +1,42 @@
+﻿<Window x:Class="num4wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num4wpf"
+        mc:Ignorable="d"
+        Title="Exercise" Height="273" Width="344">
+    <Grid Height="255">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Margin="21,55,0,44" Content="    Boutton complexe" Click="Button_Click"></Button>
+        <Ellipse x:Name="Ell" Margin="30,50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Fill="Red" Width="15" Height="15"/>
+        <TextBlock  Grid.Row="1" Margin="21,54">Message:</TextBlock>
+        <GroupBox Grid.Column="1" Margin="25,22,17,22">
+            <GroupBox.Header>
+                <StackPanel>
+                    <TextBlock Text="Choose your color!"></TextBlock>
+                </StackPanel>
+            </GroupBox.Header>
+            <StackPanel Height="50">
+                <RadioButton x:Name="RadioButton0" Content="Red" Checked="RadioButton0_Checked" ></RadioButton>
+                <RadioButton x:Name="RadioButton1" Content="Blue" Checked="RadioButton1_Checked" ></RadioButton>
+                <RadioButton x:Name="RadioButton2"  Content="Yellow" Checked="RadioButton2_Checked" ></RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <TextBox x:Name="Lemessage" Grid.Row="1"  Margin="10" Width="175" Height="20" Grid.ColumnSpan="2">
+
+           
+        </TextBox>
+
+
+    </Grid>
+
+</Window>

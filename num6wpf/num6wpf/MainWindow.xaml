@@ -1,0 +1,30 @@
+﻿<Window x:Class="num6wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num6wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="447" Width="751">
+    <Grid>
+        <ComboBox IsEditable="True" SelectionChanged="combobox_selection_changed" Margin="200,50" Height="45" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" TextSearch.Text="sonic1">
+                <Image Source="images/sonic_2.png" Width="70" Height="70"></Image>
+                <TextBlock Text="this is sonic_1!" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" TextSearch.Text="sonic2">
+                <Image Source="images/sonic_3.png" Width="70" Height="70"></Image>
+                <TextBlock Text="this is sonic_2!" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" TextSearch.Text="sonic3">
+                <Image Source="images/sonic_4.png" Width="70" Height="70"></Image>
+                <TextBlock Text="this is sonic_3!" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" TextSearch.Text="sonic4">
+                <Image Source="images/Sonic_144.png" Width="70" Height="70"></Image>
+                <TextBlock Text="this is sonic_4!" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+
+        </ComboBox>
+    </Grid>
+</Window>
